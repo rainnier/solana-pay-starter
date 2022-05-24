@@ -19,7 +19,6 @@ const App = () => {
       fetch(`/api/fetchProducts`)
         .then(response => response.json())
         .then(data => {
-          console.log(data);
           setProducts(data);
           console.log("Products", data);
         });

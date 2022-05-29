@@ -2,7 +2,8 @@
     {
         "id": 1,
         "name": "Maar-Tees-hirt",
-        "price": "0.00032",
+        "price": "32.00",
+        "currency": "USDC",
         "description": "Get this Maar-Tees-hirt monsters galore for $0.5! What else can you do!",
         "image_url": "https://live.staticflickr.com/65535/52097545835_1bb0297973_c.jpg",
         "filename": "maartees.png",

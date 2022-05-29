@@ -47,7 +47,7 @@ const App = () => {
     <div className="App">
       <div className="container">
         <header className="header-container">
-          <p className="header"> Solpee </p>
+          <p className="header"> Solpee on Devnet</p>
           <p className="sub-text">Happeeness Mascots for your SOL</p>
         </header>
 

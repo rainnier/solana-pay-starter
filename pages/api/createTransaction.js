@@ -16,6 +16,9 @@ const sellerPublicKey = new PublicKey(sellerAddress);
 const feeCollectorAddress = '9o7hmuR2DpmuLEK5Xbyf97Ui6xrvqUu8vEXpgbvEDbqF';
 const feeCollectorPublicKey = new PublicKey(feeCollectorAddress);
 
+// Collector fee percentage
+const COLLECTOR_FEE_PERCENTAGE = 0.001; // 0.1 Percent
+
 const createTransaction = async(req, res) => {
     try {
         // Extract the transaction data from the request body
@@ -60,7 +63,6 @@ const createTransaction = async(req, res) => {
             feePayer: buyerPublicKey
         });
 
-        const feePercentage = 0.001; // 0.1 Percent
         // This is the "action" that the transaction will take
         // We're just going to transfer some SOL
         const transferInstruction = SystemProgram.transfer({
@@ -83,7 +85,7 @@ const createTransaction = async(req, res) => {
         const feeTransferInstruction = SystemProgram.transfer({
             fromPubkey: buyerPublicKey,
             // Lamports are the smallest unit of SOL, like Gwei with Ethereum
-            lamports: bigAmount.multipliedBy(feePercentage).multipliedBy(LAMPORTS_PER_SOL).toNumber(),
+            lamports: bigAmount.multipliedBy(COLLECTOR_FEE_PERCENTAGE).multipliedBy(LAMPORTS_PER_SOL).toNumber(),
             toPubkey: feeCollectorPublicKey
         });
 

@@ -67,7 +67,7 @@ export default function Buy({ itemID }) {
     return (
         <div>
             {paid ? (
-                <IPFSDownload filename="maartees.zip" hash="QmNmXcJUEyHGiqMKNwATBSRYHuLPKcWxw2ykQCE3sgtJ4B" cta="Download png" />
+                <IPFSDownload filename="maartees.png" hash="QmNmXcJUEyHGiqMKNwATBSRYHuLPKcWxw2ykQCE3sgtJ4B" cta="Download png" />
             ) : (
                 <button disabled={loading} className="buy-button" onClick={processTransaction}>
                     Buy now 🠚

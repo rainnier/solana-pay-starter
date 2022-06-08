@@ -1,13 +1,17 @@
 import axios from 'axios';
 import fileDownload from 'js-file-download';
 import React from 'react';
+import { useState } from 'react/cjs/react.production.min';
 import useIPFS from '../hooks/useIPFS';
 
 const IPFSDownload = ({ hash, filename }) => {
     const file = useIPFS(hash, filename);
 
-    const handleDownload = (url, filename) => {
-        axios.get(url, {
+    const handleDownload = async file => {
+        //const url = await useIPFS(hash, filename);
+        //setFile(url);
+        console.log("file", file);
+        axios.get(file, {
             responseType: 'blob',
         })
         .then((res) => {
@@ -19,7 +23,7 @@ const IPFSDownload = ({ hash, filename }) => {
         <div>
             {file ? (
                 <div className='download-component'>
-                    <a className='download-button' onClick={() => handleDownload(file, filename)} download={filename}>Download</a>
+                    <a className='download-button' onClick={() => handleDownload(file)} download={filename}>Download</a>
                 </div>
             ) : (
                 <p>Downloading file...</p>

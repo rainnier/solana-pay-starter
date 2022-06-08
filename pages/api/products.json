@@ -1,12 +1,32 @@
 [
-    {
-        "id": 1,
-        "name": "Maar-Tees-hirt",
-        "price": "32.00",
-        "currency": "USDC",
-        "description": "Get this Maar-Tees-hirt monsters galore for $0.5! What else can you do!",
-        "image_url": "https://live.staticflickr.com/65535/52097545835_1bb0297973_c.jpg",
-        "filename": "maartees.png",
-        "hash": "QmNmXcJUEyHGiqMKNwATBSRYHuLPKcWxw2ykQCE3sgtJ4B"
-    }
+  {
+    "id": 1,
+    "name": "Maar-Tees-hirt",
+    "price": "32.00",
+    "currency": "USDC",
+    "description": "Get this Maar-Tees-hirt monsters galore for $0.5! What else can you do!",
+    "image_url": "https://live.staticflickr.com/65535/52097545835_1bb0297973_t.jpg",
+    "filename": "maartees.png",
+    "hash": "QmNmXcJUEyHGiqMKNwATBSRYHuLPKcWxw2ykQCE3sgtJ4B"
+  },
+  {
+    "id": "2",
+    "name": "FrogLizard",
+    "price": "30",
+    "image_url": "https://live.staticflickr.com/65535/52126401773_bc33fe4ed1_t.jpg",
+    "description": "froglizard...",
+    "filename": "froglizard.jpg",
+    "hash": "QmR3CSBcvRs2zFwrijoA4Jf6PofL5qSzgXZHj2x33hqmsH",
+    "currency": "USDC"
+  },
+  {
+    "id": 3,
+    "name": "oface",
+    "price": "55",
+    "image_url": "https://live.staticflickr.com/65535/52131767886_4555a4628b_t.jpg",
+    "description": "oface of a cutie axie...",
+    "filename": "solpee.png",
+    "hash": "QmfEbUPe61XfV4Yud8JYK3rDS5WLqH4RrFqgamAdNAFzP3",
+    "currency": "usdc"
+  }
 ]

@@ -54,7 +54,7 @@ export default function Buy ({ itemID }) {
       // Send the transaction to the network
       const txHash = await sendTransaction(tx, connection)
       console.log(
-        `Transaction sent: https://solscan.io/tx/${txHash}?cluster=devnet`
+        `Transaction sent: https://solscan.io/tx/${txHash}`
       )
       setStatus(STATUS.Submitted)
     } catch (error) {

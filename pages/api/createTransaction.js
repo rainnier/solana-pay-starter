@@ -11,7 +11,7 @@ import { createTransferCheckedInstruction, getAssociatedTokenAddress, getMint } 
 import BigNumber from "bignumber.js";
 import products from "./products.json";
 
-const usdcPublicKey = new PublicKey('Gh9ZwEmdLJ8DscKNTkTqPbNwLNNBjuSzaG9Vp2KGtKJr');
+const usdcPublicKey = new PublicKey('EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v');
 
 // Make sure you replace this with your wallet address!
 const sellerAddress = 'EpA3pJsgVsX9qE3GaxbwG9q8Bya9Sau3Ljjj8Mptrpav';
@@ -52,7 +52,7 @@ const createTransaction = async (req, res) => {
         // Convert our price to the correct format
         const bigAmount = BigNumber(itemPrice);
         const buyerPublicKey = new PublicKey(buyer);
-        const network = WalletAdapterNetwork.Devnet;
+        const network = WalletAdapterNetwork.Mainnet;
         const endpoint = clusterApiUrl(network);
         const connection = new Connection(endpoint);
 
